@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icons/big_sur.png</file>
+    <file>icons/catalina.png</file>
+    <file>icons/mojave.png</file>
+    <file>icons/sierra.png</file>
+  </qresource>
+</RCC>
