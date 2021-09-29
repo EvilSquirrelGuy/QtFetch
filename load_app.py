@@ -38,7 +38,7 @@ class SystemInfo(QtWidgets.QMainWindow):
   def updateOSInfo(self):
     os_name = self.ui.OSName.text() # read the contents of the OSName widget, so it can be replaced with the os name and codename
 
-    release_file = open('/etc/os-release').read().split('\n') # read the /etc/os-release file and split it by line
+    release_file = open('/etc/os-release').read().split('\n').close() # read the /etc/os-release file and split it by line (closed it cuz good programming practise)
     ## release_file = open('/home/squirrel/temp/os-release').read().split('\n') # read the /etc/os-release file and split it by line
     release_info = dict() # create a new, empty dictionary
 
